@@ -1,0 +1,106 @@
+
+@use "../../sass/colours" as color;
+
+ .Form2 {
+  display: flex;
+  margin-top: 4rem;
+  padding: 0 1rem;
+  @media (max-width:920px) {
+    margin-top: 6rem;
+ }
+ @media (max-width:320px) {
+    margin-top: 7.5rem;
+ }
+
+  &>.Form2__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+     &>li {
+      background-color: #fff;
+      border-radius: .5rem;
+     }
+  }
+}
+
+
+
+.form2__section {
+  color: #fff;
+  background-color: color.$primary-color_brown;
+  border-radius: .5rem .5rem 0 0;
+  padding: 1.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.form2__info {
+  font-size: 1rem;
+  padding: 5rem 1.5rem 1rem;
+}
+
+.form2__title {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.signature {
+  display: block;
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  padding: 1.5rem;
+}
+
+
+
+
+
+
+
+.button__navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &>div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+
+    &>button {
+      display: flex;
+     align-items: center;
+     font-size: .9rem;
+     text-transform: capitalize;
+     padding: .6rem 1.5rem;
+     border-radius: .3rem;
+     color: darken(color.$primary-color_brown,  50%);
+     background-color: #fff;
+     border: none;
+     box-shadow: 0px 1.5px 1px 0px color.$primary-color_dark-blue;
+     cursor: pointer;
+     transition: background-color, 200ms ease;
+
+
+     &:hover {
+       background-color: darken(#fff, 5%);
+     }
+    }
+  }
+
+
+  &>button {
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    padding: .6rem 1.5rem;
+    border-radius: .3rem;
+    color: darken(color.$primary-color_brown,  50%);
+    background-color: transparent;
+    border: none;
+  }
+}

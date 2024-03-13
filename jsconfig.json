@@ -1,0 +1,13 @@
+{
+   "compilerOptions": {
+     "target": "ES6",
+     "baseUrl": "src",
+     "forceConsistentCasingInFileNames": false
+   },
+   "include": ["src"],
+   "exclude": ["node_modules"]
+ }
+ 
+
+
+ 

@@ -1,0 +1,161 @@
+
+import Glassdoor from "../../Assets/image/glassdor-rating.png";
+import TestimonieImage1 from "../../Assets/image/Testimonie-image 1.png";
+
+
+        <div className="signup-testimonie">
+          <Link
+            to="https://shorturl.at/ehGX2"
+            target="_blank"
+            className="rating"
+          >
+            <img src={Glassdoor} alt="" />
+          </Link>
+          <div className="testimonie-card">
+            <div className="inner-testimonie-card">
+              <div className="testimonie-image">
+                <img src={TestimonieImage1} alt="" />
+              </div>
+              <p>
+                “A membership card grants access to exclusive facilities,
+                discounts, events, and community engagement. It often serves as
+                identification and may include voting rights within the
+                organization.”
+              </p>
+            </div>
+            <div className="testimonie-profile">
+              <Icon icon="ri:navigation-fill" />
+              <p>Amita Kehlmann, Operations. (OPS)</p>
+            </div>
+          </div>
+          <footer>
+            Join 2,000,000+ Member who trust Colorado National Guard with their
+            Membership Card
+          </footer>
+        </div>
+
+
+
+
+
+
+
+.
+.signup-testimonie {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   padding: 5rem 0rem;
+   background: linear-gradient(to top, rgba(color.$primary-color_light-blue, 1), rgba(color.$primary-color_white, 1));
+   @media (max-width:1169px) {
+     display: none;
+   }
+
+
+   &>footer {
+      // margin-top: 2rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      max-width: 400px;
+   }
+
+
+   &>.rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &>img {
+         display: block;
+         height: 100%;
+         width: 120px;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
+         border-bottom-right-radius: 8px;
+         padding: .5rem;
+         background-color: #fff;
+         box-shadow: -4px 5px 0px 1px color.$primary-color_dark-blue;
+      }
+   }
+
+
+
+
+   &>.testimonie-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+
+      &>.inner-testimonie-card {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 2rem 1rem;
+         gap: 1rem;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
+         border-bottom-right-radius: 8px;
+         background-color: #fff;
+         max-width: max-content;
+
+
+         &>.testimonie-image {
+            display: flex;
+            justify-content: center;
+
+            &>img {
+               height: 100%;
+               width: 60px;
+               border-radius: 99px;
+            }
+         }
+
+
+         &>p {
+            font-size: 1rem;
+            text-align: center;
+            max-width: 400px;
+         }
+      }
+   }
+}
+
+
+
+
+.testimonie-profile {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   bottom: -40px;
+   left: 50%;
+
+
+   &>svg {
+      position: relative;
+      left: -10px;
+      bottom: -10px;
+      color: orange;
+      font-size: 20px;
+   }
+
+   &>p {
+      font-size: .9rem;
+      font-weight: 500;
+      padding: .5rem;
+      border-radius: 1rem;
+      background-color: orange;
+      color: #fff;
+      box-shadow: -5px 2px 5px 0px #00000032;
+      max-width: 150px;
+   }
+
+
+
+}
+

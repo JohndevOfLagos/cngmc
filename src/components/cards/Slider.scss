@@ -1,0 +1,67 @@
+
+@use "../../sass/colours" as color;
+
+
+// Carousel.scss
+
+
+.carousel {
+   position: relative;
+ 
+   .imageContainer {
+     position: relative;
+ 
+     img {
+      width: 100%;
+      transition: transform,  opacity 200ms ease;
+      opacity: 0.4;
+    }
+
+     img.active {
+        opacity: 1; // Make the active image fully visible
+     }
+
+     
+   }
+
+}
+ 
+   .controls {
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     z-index: 1; // Ensure buttons appear above the image   
+   }
+ 
+
+
+   .prevButton {
+     position: absolute;
+     top: 50%;
+     left: 0%;
+     transform: translate(50%, -50%);
+     border: none;
+     background-color: transparent;
+     color: #fff;
+
+     &>svg {
+      font-size: 50px;
+     }
+   }
+
+   .nextButton {
+     position: absolute;
+     top: 50%;
+     right: 0%;
+     transform: translate(-50%, -50%);
+     border: none;
+     background-color: transparent;
+     color: #fff;
+
+
+     &>svg {
+      font-size: 50px;
+     }
+   }

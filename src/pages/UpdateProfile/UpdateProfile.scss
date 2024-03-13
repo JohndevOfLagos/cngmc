@@ -1,0 +1,139 @@
+
+
+@use "../../sass/colours" as color;
+
+
+.UpdateProfile {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   padding: 4rem;
+   background-color: #ffffff;
+
+   &>.inner-UpdateProfile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &>.icon-image {
+         display: flex;
+         align-items: center;
+
+         &>img {
+            display: block;
+            object-fit: cover;
+            height: 200px;
+            width: 200px;
+         }
+      }
+   }
+}
+
+.UpdateProfile-header {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+   &>h4 {}
+
+   &>p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: darken(grey, 10%);
+   }
+}
+
+
+.UpdateProfile-form {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   width: 400px;
+   padding: 2rem 2rem 4rem;
+
+
+   &>.UpdateProfile__form-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+
+
+      &>input[type="text"],
+      &>input[type="file"] {
+         font-size: 1.2rem;
+         width: 100%;
+         border: 1px solid #000;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
+         border-bottom-right-radius: 8px;
+         padding: 2rem 1rem .5rem;
+         padding-left: 1rem;
+         background-color: transparent;
+         outline: none;
+
+         &:focus~label,
+         &:valid~label {
+            top: 10px;
+            font-size: .8rem;
+            color: #000000;
+         }
+
+
+
+      }
+
+      &>label {
+         position: absolute;
+         top: 12px;
+         left: 0;
+         transition: all 0.3s ease;
+         pointer-events: none;
+         font-weight: 700;
+         color: #000;
+         font-size: .9rem;
+         padding: 0 1rem;
+      }
+
+   }
+}
+
+
+.UpdateProfile-button {
+   display: flex;
+   padding: 1rem;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1.5rem;
+ 
+
+
+   &>button {
+      display: flex;
+      align-items: center;
+      border: none;
+      font-size: 1.1rem;
+      padding: .6rem;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      cursor: pointer;
+   }
+  
+
+
+
+}
+
+.update {
+   background-color: lighten(color.$primary-color_dark-blue, 30%);
+   color: #fff;
+}
+.cancel {
+   background-color: lighten(#000, 10%);
+   color: #fff;
+}

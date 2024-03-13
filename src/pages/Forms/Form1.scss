@@ -1,0 +1,186 @@
+@use "../../sass/colours" as color;
+
+.Form1 {
+   display: flex;
+   flex-direction: column;
+   padding: 0 1rem;
+   margin-top: 4rem;
+   @media (max-width:920px) {
+      margin-top: 6rem;
+   }
+   @media (max-width:320px) {
+      margin-top: 7.5rem;
+   }
+
+   .Form1-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+
+      &>li {
+         gap: 1rem;
+         background-color: #fff;
+         font-size: 1.1rem;
+         border-radius: .5rem;
+         box-shadow: 0px 0px 5px 0px lighten(color.$primary-color_blue, 20%);
+         
+         &>.Form1__banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0rem 1.5rem 1.5rem;
+   
+   
+            &>.Banner {
+               display: block;
+               object-fit: cover;
+               height: 100%;
+               width: 100%;
+            }
+   
+            &>img {
+               display: block;
+               object-fit: cover;
+               height: 150px;
+               width: 100%;
+            }
+   
+         }
+   
+         &>.Form1-head__info {
+            font-size: .9rem;
+            font-weight: 500;
+            color: #000000a5;
+            padding: 2rem 1.5rem 1rem;
+         }
+   
+         &>.Form1-head-title {
+            display: flex;
+            padding: 1rem 1.5rem 1rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+            border-bottom: 1.5px solid #00000044;
+            border-top: 10px solid color.$primary-color_brown;
+            border-radius: .5rem .5rem 0 0;
+         }
+         
+      }
+   }
+
+
+
+
+   .Form1__head {
+      display: flex;
+      flex-direction: column;
+   
+      padding-bottom: 4rem;
+
+      &>p {
+         transform:
+         skew(-5deg);
+         padding: 0 .4rem;
+         padding: 0 1.5rem;
+      }
+
+      &>span {
+       display: flex;
+       padding: 1rem 2rem;
+       transform:
+         skew(-5deg);
+         max-width: 260px;
+
+        &>span {
+
+         &>svg {
+            font-size: 30px;
+         }
+        }
+      }
+   }
+}
+
+
+.Form1__section {
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   font-weight: bolder;
+   padding: 1rem 1.5rem;
+}
+
+.heading {
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+ font-weight: bolder;
+ padding: 1rem 1.5rem 0;
+   &>.slant {
+      font-size: 1rem;
+      font-weight: 500;
+      transform: skew(-10deg);
+      
+   
+   
+   } 
+}
+
+
+
+
+.answer {
+   padding: 0 1.5rem 1rem;
+}
+
+.priceImage {
+   display: block;
+   object-fit: cover;
+   padding: 1rem 1.8rem 2rem;
+}
+
+
+.button__control {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1rem;
+
+   &>.next__btn {
+     display: flex;
+     align-items: center;
+     font-size: .9rem;
+     text-transform: capitalize;
+     padding: .6rem 1.5rem;
+     border-radius: .3rem;
+    color: darken(color.$primary-color_brown, 50%);
+     background-color: #fff;
+     border: none;
+     box-shadow: 0px 1.5px 1px 0px color.$primary-color_dark-blue;
+     cursor: pointer;
+     transition: background-color, 200ms ease;
+
+
+     &:hover {
+       background-color: darken(#fff, 5%);
+     }
+   }
+
+   &>.clear-form__btn {
+      display: flex;
+     align-items: center;
+     font-size: .9rem;
+     padding: .6rem 1.5rem;
+     border-radius: .3rem;
+     color: darken(color.$primary-color_brown,  50%);
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+   }
+}
+
+// .Form2__list {
+//    display: none;
+// }
+
+

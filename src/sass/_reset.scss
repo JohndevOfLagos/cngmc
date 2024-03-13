@@ -1,0 +1,39 @@
+
+
+*, ::before, ::after, 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+html, body, #root {
+   line-height: 1.5;
+   background-color: #0000000e;
+   scroll-behavior: smooth;
+   display: block;
+   font-family: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';;
+   -webkit-font-smoothing: antialiased;
+}
+
+
+img {
+ width: 100%;
+ max-height: 100%;
+ object-fit: cover;
+ display: block;
+}
+
+a, button {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li, ol {
+  list-style: none;
+}
+
+
+

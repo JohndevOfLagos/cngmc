@@ -1,0 +1,136 @@
+@use "../../sass/colours" as color;
+
+
+//positioning
+.homeNavs__mobile {
+   position: fixed;
+   //create DRY for stacking
+   z-index: 9999;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-color: #fff;
+   transition: left 200ms ease-in;
+ 
+   &.hide-mobile {
+     left: -200%;
+   }
+ }
+
+
+ 
+.sidebar{
+   flex: 20rem;
+   max-width: 20rem;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   color: #fff;
+   background-color: color.$primary-color_dark-blue;
+   padding: 1rem 1rem 4rem;
+ 
+   &__inner{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+   
+   }
+ 
+   &__header{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+
+    
+     gap: 3rem;
+ 
+     &>img{
+      display: block;
+      object-fit: cover;
+      height: 40px;
+       width: 200px;
+       
+     }
+     
+   }
+ }
+ 
+ button.icon-block{
+   max-width: max-content;
+   display: flex;
+   height: 100%;
+   align-items: center;
+   border: none;
+   border-radius: 50%;
+   padding: .4rem;
+   color: color.$primary-color_dark-blue;
+   background-color: color.$primary-color_light-yellow;
+   cursor: pointer;
+
+   &>svg{
+     color: inherit;
+     font-size: 25px;
+   }
+ }
+
+ button.icon-block:active {
+   background-color: darken(color.$primary-color_light-yellow, 20%);
+ }
+ 
+ .sidebar__nav-list{
+   display: flex;
+   flex-direction: column;
+   gap: 1.6rem;
+   margin: 2.5rem 0;
+   
+   &>li{
+     display: flex;
+     flex-direction: column;
+
+   }
+   
+ }
+ 
+ .sidebar-link{
+   display: flex;
+   align-items: center;
+   gap: .8rem;
+   font-size: 1rem;
+   font-weight: 500;
+   transition: transform 200ms ease-in;
+   padding: .5rem 1rem;
+   border: 1.5px solid color.$primary-color_light-yellow;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   color: color.$primary-color_light-yellow;
+ 
+ //resused kindly convert to DRY
+   &>span{
+
+   }
+ 
+
+
+ 
+ 
+ 
+   &>svg{
+     font-size: 25px;
+     
+   }
+ }
+
+  
+  .sidebar-link:hover{
+   background-color: color.$primary-color_yellow;
+   color: color.$primary-color_dark-blue;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+   border: 1.5px solid color.$primary-color_light-yellow;
+  
+ }
+ 
+
+
